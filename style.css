@@ -1,0 +1,159 @@
+* {
+  font-family: monospace;
+  /* font-family: "Poppins", sans-serif; */
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(26, 25, 25);
+  height: 100vh;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main-content {
+  height: 380px;
+  width: 450px;
+  background-color: rgb(255, 255, 255, 0.1);
+  border-radius: 40px;
+  backdrop-filter: blur(50px);
+  box-shadow: 1px 1px 15px 1px rgba(110, 107, 107, 0.295);
+}
+
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav p {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.text {
+  padding: 0;
+  border-right: 2px solid;
+  width: 38%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(15), cursor 0.4s step-end infinite alternate;
+  font-family: monospace;
+}
+
+/* cursor blinking */
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.home {
+  text-decoration: none;
+}
+
+.home i {
+  margin-right: 30px;
+  font-size: 24px;
+  color: rgb(255, 179, 37);
+}
+
+.line {
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+  margin: 13px;
+  opacity: 0.3;
+}
+
+.main-box {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+}
+
+.main-box .box1 {
+  height: 238px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box1 img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 1.5px solid rgb(255, 179, 37);
+  margin-left: 30px;
+}
+
+.box2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+
+.box2 h2 {
+  font-size: 25px;
+}
+
+.box2 p {
+  font-size: 15px;
+}
+
+.yellow {
+  color: rgb(255, 179, 37);
+  transition: 0.3s ease;
+}
+
+.yellow:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+
+.btn .button {
+    padding: 8px 20px;
+  margin-top: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 0px;
+  background: rgb(255, 179, 37);
+  color: rgb(44, 43, 43);
+  font-weight: bolder;
+  transition: all 0.2s ease;
+}
+
+.btn .button:hover {
+  transform: scale(1.02);
+  color: white;
+  background: rgb(34, 33, 33);
+}
+.btn .button:active {
+  transform: scale(0.96);
+}
